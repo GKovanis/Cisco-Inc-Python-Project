@@ -1,0 +1,43 @@
+Feb 10 15:27:17.353 HYPERVISOR: Release 0.2.17-amd64/Darwin (tag 2017072410)
+Feb 10 15:27:17.353 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50039.
+Feb 10 15:27:17.363 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 10 15:27:17.363 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alexpag/github/Cisco-Inc-Python-Project/Topology/Python Project/project-files/dynamips 
+Feb 10 15:27:17.363 GENERAL: working_dir=/Users/alexpag/github/Cisco-Inc-Python-Project/Topology/Python Project/project-files/dynamips
+Feb 10 15:27:17.364 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/alexpag/github/Cisco-Inc-Python-Project/Topology/Python Project/project-files/dynamips/1e0e52e0-0b37-4747-9370-e8a25b59ba70 
+Feb 10 15:27:17.364 GENERAL: working_dir=/Users/alexpag/github/Cisco-Inc-Python-Project/Topology/Python Project/project-files/dynamips/1e0e52e0-0b37-4747-9370-e8a25b59ba70
+Feb 10 15:27:17.364 HYPERVISOR: exec_cmd: vm create R3 3 c3725 
+Feb 10 15:27:17.364 VM: VM R3 created.
+Feb 10 15:27:17.365 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5005 
+Feb 10 15:27:17.365 HYPERVISOR: exec_cmd: c3725 get_mac_addr R3 
+Feb 10 15:27:17.366 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Feb 10 15:27:17.366 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:27:17.366 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x602467a4 
+Feb 10 15:27:17.367 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/alexpag/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 10 15:27:17.368 HYPERVISOR: exec_cmd: c3725 set_mac_addr R3 c203.2cb1.0000 
+Feb 10 15:27:17.368 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Feb 10 15:27:19.002 HYPERVISOR: exec_cmd: nio create_udp udp-5560c249-17e0-4f81-bc49-bec5e96da1b9 10032 127.0.0.1 10033 
+Feb 10 15:27:19.026 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-5560c249-17e0-4f81-bc49-bec5e96da1b9 
+Feb 10 15:27:19.026 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:27:21.934 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Feb 10 15:27:21.934 VM: VM Ghost created.
+Feb 10 15:27:21.937 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/alexpag/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Feb 10 15:27:21.937 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 10 15:27:21.938 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost '/Users/alexpag/github/Cisco-Inc-Python-Project/Topology/Python Project/project-files/dynamips/c3725-adventerprisek9-mz.124-25d.image-128.ghost' 
+Feb 10 15:27:21.938 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:27:21.940 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Feb 10 15:27:21.940 HYPERVISOR: exec_cmd: vm start R3 
+Feb 10 15:42:00.282 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:42:00.283 HYPERVISOR: exec_cmd: vm suspend R3 
+Feb 10 15:42:01.493 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:42:01.493 HYPERVISOR: exec_cmd: vm stop R3 
+Feb 10 15:42:02.088 VM: VM R3 shutdown.
+Feb 10 15:42:02.089 HYPERVISOR: exec_cmd: vm extract_config R3 
+Feb 10 15:43:59.075 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 16 WIC-2T 
+Feb 10 15:47:03.629 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Feb 10 15:47:03.631 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:47:03.632 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Feb 10 15:47:03.632 HYPERVISOR: exec_cmd: vm start R3 
+Feb 10 15:51:08.938 HYPERVISOR: exec_cmd: vm get_status R3 
+Feb 10 15:51:08.938 HYPERVISOR: exec_cmd: vm stop R3 
+Feb 10 15:51:09.425 VM: VM R3 shutdown.
+Feb 10 15:51:09.426 HYPERVISOR: exec_cmd: vm extract_config R3 

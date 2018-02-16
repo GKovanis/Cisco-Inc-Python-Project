@@ -1,0 +1,4 @@
+vtty_thread: select: Bad file descriptor
+VM: Unable to store instance 'Ghost' in registry!
+VM Ghost: unable to create instance!
+vtty_thread: select: Bad file descriptor
