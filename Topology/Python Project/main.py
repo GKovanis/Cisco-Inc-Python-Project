@@ -19,6 +19,16 @@ def generate_ip_list(ip_mask):
         ip_list.append(net[0]+"."+net[1]+"."+net[2]+"."+str(i))
     return ip_list
 
+
+#a fuction that tests connectivity for every ip in range
+def ip_validate(ip_list):
+    clean_list = []
+    for ip in ip_list:
+        ping_reply = subprocess.call(['ping', '-c', '2', '-w', '2', '-q', '-n', ip])
+        if ping_reply == 0:
+            clean_list.append(ip)
+    return clean_list
+    
 #a function that brute forces every machine to find its password and returns a
 # [ip,password] list
 def cracker(ip_list):
