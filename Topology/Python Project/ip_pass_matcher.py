@@ -47,9 +47,3 @@ def cracker(ip_list):
             except paramiko.AuthenticationException:
 
     return credentials
-
-
-range_file = open("range.txt", 'r')
-ip = range_file.readlines()[0].rstrip("/n")
-ip_list = generate_ip_list(ip)
-credentials = cracker(ip_list)
