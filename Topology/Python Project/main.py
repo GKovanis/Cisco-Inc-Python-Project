@@ -98,7 +98,7 @@ net = range_file.readlines()[0].rstrip("/n")
 ip_list = generate_ip_list(ip)
 credentials = cracker(ip_list)
 neighbouring_list = []
-for [ip,passw] in credentials:
+for [ip,password] in credentials:
     try:
         #Logging into device
         session = paramiko.SSHClient()
