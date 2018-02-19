@@ -95,7 +95,7 @@ def extract_data(): #alex
 #main
 range_file = open("range.txt", 'r')
 net = range_file.readlines()[0].rstrip("/n")
-ip_list = generate_ip_list(ip)
+ip_list = generate_ip_list(net)
 credentials = cracker(ip_list)
 neighbouring_list = []
 for [ip,password] in credentials:
