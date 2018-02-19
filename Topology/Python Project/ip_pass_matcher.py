@@ -1,4 +1,4 @@
-ipimport re
+import re
 import time
 import paramiko #needs to be imported
 
