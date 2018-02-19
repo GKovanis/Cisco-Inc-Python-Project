@@ -28,7 +28,7 @@ def ip_validate(ip_list):
         if ping_reply == 0:
             clean_list.append(ip)
     return clean_list
-    
+
 #a function that brute forces every machine to find its password and returns a
 # [ip,password] list
 def cracker(ip_list):
@@ -50,10 +50,12 @@ def cracker(ip_list):
 
         		#Start an interactive shell session on the router
                 connection = session.invoke_shell()
+                #Setting terminal length for entire output - no pagination
+                connection.send("terminal length 0\n")
+                time.sleep(1)
+                neighbours = extract_data()
                 #Closing the connection
                 session.close()
-                credentials.append([ip,password])
-                break
             except paramiko.AuthenticationException:
 
     return credentials
@@ -102,34 +104,19 @@ def extract_data(): #alex
     ''' I can't test this code on my machine, due to my issue with ssh.
     Please test and if there is a problem or we need more regexes, tell me'''
 
+#Creating threads
+def create_threads(ip_list):
+    threads = []
+    for ip in ip_list:
+        th = threading.Thread(target = cracker, args = (ip,))   #args is a tuple with a single element
+        th.start()
+        threads.append(th)
+
+    for th in threads:
+        th.join()
 #main
 range_file = open("range.txt", 'r')
 net = range_file.readlines()[0].rstrip("/n")
 ip_list = generate_ip_list(net)
-credentials = cracker(ip_list)
-neighbouring_list = []
-for [ip,password] in credentials:
-    try:
-        #Logging into device
-        session = paramiko.SSHClient()
-
-        #For testing purposes, this allows auto-accepting unknown host keys
-        #Do not use in production! The default would be RejectPolicy
-        session.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
-        #Passing the necessary parameters
-        session.connect(ip, username = "admin", password = password)
-
-        #Start an interactive shell session on the router
-        connection = session.invoke_shell()
-
-        #Setting terminal length for entire output - no pagination
-        connection.send("terminal length 0\n")
-        time.sleep(1)
-        neighbours = extract_data()
-        #Closing the connection
-        session.close()
-        #forming a [ip, neighbours] list
-        neighbouring_list.append([ip,neighbors])#Abe i imagine that something like this will suit you
-    except paramiko.SSHException:
-        print"Error connecting or host timed out\n"
+clean_list = ip_validate(ip_list)
+create_threads(clean_list)
