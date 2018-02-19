@@ -15,7 +15,7 @@ def generate_ip_list(ip_mask):
     net_range = 32 - cidr
     #generate the ips in the network
     ip_list = []
-    for i in range(net[3])+1,net_range+1):
+    for i in range(int(net[3])+1,net_range+1):
         ip_list.append(net[0]+"."+net[1]+"."+net[2]+"."+str(i))
     return ip_list
 
