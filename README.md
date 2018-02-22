@@ -70,17 +70,31 @@ For this part, in order to get the End of Life and End of Support information of
 Running the **main.py** script, outputs 8 .txt files, one for each router. These files can be found in *Topology/Python Project/Results* path. The output for router R1, for example, looks like this:
 
 Information for Router : R1.pyproject
+
 Router's Hardware Version is: C3725-ADVENTERPRISEK9-M
+
 The OS running on the router is: Version 12.4(25d)
+
 Management IP address is: 192.168.2.101
+
 Router's password is: python
+
 Router's SN: FTX0945W0MY
+
 Router's installed modules and status is:
+
 NAME: "3725 chassis", DESCR: "3725 chassis"
+
 PID:                   , VID: 0.1, SN: FTX0945W0MY
+
 Router's interface description and status are:
+
 FastEthernet0/0            unassigned      YES NVRAM  administratively down down
-FastEthernet0/1            192.168.2.101   YES NVRAM  up                    up  Device Neighbors are: 
+
+FastEthernet0/1            192.168.2.101   YES NVRAM  up                    up  
+
+Device Neighbors are:
+
 R2.pyproject,R3.pyproject,R4.pyproject,R5.pyproject,R6.pyproject,R7.pyproject,R8.pyproject
 
 We also run the command:  **python main.py > log.txt**, to create a log file with the ping statistics of our ping attemps to find the assigned ones. This log file is located in the following path: *Topology/Python Project*.
