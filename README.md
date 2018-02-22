@@ -67,8 +67,9 @@ Our project is deployed by executing the **main.py** script. To begin, end user 
 For this part, in order to get the End of Life and End of Support information of each router, we had to connect to the routers' supplier company website. To get this information, it was necessary to request for an authorization token. We performed this request by sending to the company's server a POST command, with the clients ID and secret password included, which were given to us by the company. After we received the token, we asked for the End of Life and End of Support information, by sending a GET command with the Serial Number of every router of our topology. We used regexes to isolate only the 2 dates we needed from the json output that was send by the server, as a reply to our GET request.     
 
 ## Testing
-Running the **main.py** script, outputs 8 .txt files, one for each router. These files can be found in *Topology/Python Project/Results* path. The output for router R1, for example, looks like this:
-
+Running the **main.py** script, outputs 8 .txt files, one for each router. These files can be found in *Topology/Python Project/Results* path.
+#### The output for router R1, for example, looks like this:
+___
 Information for Router : R1.pyproject
 
 Router's Hardware Version is: C3725-ADVENTERPRISEK9-M
@@ -99,8 +100,8 @@ R2.pyproject,R3.pyproject,R4.pyproject,R5.pyproject,R6.pyproject,R7.pyproject,R8
 
 We also run the command:  **python main.py > log.txt**, to create a log file with the ping statistics of our ping attemps to find the assigned ones. This log file is located in the following path: *Topology/Python Project*.
 
-For the *End Of Life/End Of Support* part, the output should look like this:
-
+#### For the End Of Life/End Of Support part, the output should look like this:
+___
 Serial Number : FTX0945W0MY
 Last Date of Support : 2016-10-31
 Last Date of Life : 2016-01-30
