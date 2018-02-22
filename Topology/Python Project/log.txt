@@ -1,0 +1,188 @@
+PING 192.168.2.96 (192.168.2.96) 56(84) bytes of data.
+
+--- 192.168.2.96 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 1999ms
+
+PING 192.168.2.97 (192.168.2.97) 56(84) bytes of data.
+
+--- 192.168.2.97 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 999ms
+
+PING 192.168.2.98 (192.168.2.98) 56(84) bytes of data.
+
+--- 192.168.2.98 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1004ms
+
+PING 192.168.2.99 (192.168.2.99) 56(84) bytes of data.
+
+--- 192.168.2.99 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 192.168.2.100 (192.168.2.100) 56(84) bytes of data.
+
+--- 192.168.2.100 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1004ms
+rtt min/avg/max/mdev = 0.053/0.054/0.056/0.007 ms
+PING 192.168.2.101 (192.168.2.101) 56(84) bytes of data.
+
+--- 192.168.2.101 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 7.539/10.808/14.078/3.271 ms
+PING 192.168.2.102 (192.168.2.102) 56(84) bytes of data.
+
+--- 192.168.2.102 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 5.882/10.035/14.189/4.154 ms
+PING 192.168.2.103 (192.168.2.103) 56(84) bytes of data.
+
+--- 192.168.2.103 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1001ms
+rtt min/avg/max/mdev = 11.587/15.972/20.357/4.385 ms
+PING 192.168.2.104 (192.168.2.104) 56(84) bytes of data.
+
+--- 192.168.2.104 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 192.168.2.105 (192.168.2.105) 56(84) bytes of data.
+
+--- 192.168.2.105 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1005ms
+rtt min/avg/max/mdev = 10.566/11.891/13.216/1.325 ms
+PING 192.168.2.106 (192.168.2.106) 56(84) bytes of data.
+
+--- 192.168.2.106 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 192.168.2.107 (192.168.2.107) 56(84) bytes of data.
+
+--- 192.168.2.107 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1004ms
+
+PING 192.168.2.108 (192.168.2.108) 56(84) bytes of data.
+
+--- 192.168.2.108 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1001ms
+
+PING 192.168.2.109 (192.168.2.109) 56(84) bytes of data.
+
+--- 192.168.2.109 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 10.783/15.297/19.812/4.516 ms
+PING 192.168.2.110 (192.168.2.110) 56(84) bytes of data.
+
+--- 192.168.2.110 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 7.910/12.308/16.707/4.399 ms
+PING 192.168.2.111 (192.168.2.111) 56(84) bytes of data.
+
+--- 192.168.2.111 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1005ms
+
+PING 192.168.2.112 (192.168.2.112) 56(84) bytes of data.
+
+--- 192.168.2.112 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1004ms
+
+PING 192.168.2.113 (192.168.2.113) 56(84) bytes of data.
+
+--- 192.168.2.113 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1000ms
+rtt min/avg/max/mdev = 10.992/19.797/28.603/8.806 ms
+PING 192.168.2.114 (192.168.2.114) 56(84) bytes of data.
+
+--- 192.168.2.114 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 999ms
+
+PING 192.168.2.115 (192.168.2.115) 56(84) bytes of data.
+
+--- 192.168.2.115 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 192.168.2.116 (192.168.2.116) 56(84) bytes of data.
+
+--- 192.168.2.116 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1001ms
+
+PING 192.168.2.117 (192.168.2.117) 56(84) bytes of data.
+
+--- 192.168.2.117 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1001ms
+
+PING 192.168.2.118 (192.168.2.118) 56(84) bytes of data.
+
+--- 192.168.2.118 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1004ms
+
+PING 192.168.2.119 (192.168.2.119) 56(84) bytes of data.
+
+--- 192.168.2.119 ping statistics ---
+2 packets transmitted, 2 received, 0% packet loss, time 1002ms
+rtt min/avg/max/mdev = 10.584/16.153/21.722/5.569 ms
+PING 192.168.2.120 (192.168.2.120) 56(84) bytes of data.
+
+--- 192.168.2.120 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 1999ms
+
+PING 192.168.2.121 (192.168.2.121) 56(84) bytes of data.
+
+--- 192.168.2.121 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1001ms
+
+PING 192.168.2.122 (192.168.2.122) 56(84) bytes of data.
+
+--- 192.168.2.122 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 1999ms
+
+PING 192.168.2.123 (192.168.2.123) 56(84) bytes of data.
+
+--- 192.168.2.123 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 192.168.2.124 (192.168.2.124) 56(84) bytes of data.
+
+--- 192.168.2.124 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1002ms
+
+PING 192.168.2.125 (192.168.2.125) 56(84) bytes of data.
+
+--- 192.168.2.125 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1004ms
+
+PING 192.168.2.126 (192.168.2.126) 56(84) bytes of data.
+
+--- 192.168.2.126 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 192.168.2.127 (192.168.2.127) 56(84) bytes of data.
+
+--- 192.168.2.127 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 10.1.1.10 (10.1.1.10) 56(84) bytes of data.
+
+--- 10.1.1.10 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1000ms
+
+PING 10.1.1.11 (10.1.1.11) 56(84) bytes of data.
+
+--- 10.1.1.11 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1003ms
+
+PING 10.1.1.12 (10.1.1.12) 56(84) bytes of data.
+
+--- 10.1.1.12 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1008ms
+
+PING 10.1.1.13 (10.1.1.13) 56(84) bytes of data.
+
+--- 10.1.1.13 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1008ms
+
+* All parameters were extracted from device 192.168.2.110
+* All parameters were extracted from device 192.168.2.113
+* All parameters were extracted from device 192.168.2.102
+* All parameters were extracted from device 192.168.2.101
+* All parameters were extracted from device 192.168.2.103
+* All parameters were extracted from device 192.168.2.105
+* All parameters were extracted from device 192.168.2.109
+* All parameters were extracted from device 192.168.2.119

@@ -1,0 +1,23 @@
+Information for Router : R2.pyproject
+
+Router's Hardware Version is: C3725-ADVENTERPRISEK9-M
+
+The OS running on the router is: Version 12.4(25d)
+
+Management IP address is: 192.168.2.102
+
+Router's password is: python2
+
+Router's SN: FTX0945W0MY
+
+Router's installed modules and status is:
+NAME: "3725 chassis", DESCR: "3725 chassis"
+PID:                   , VID: 0.1, SN: FTX0945W0MY
+
+Router's interface description and status are:
+FastEthernet0/0            unassigned      YES NVRAM  administratively down down    
+
+FastEthernet0/1            192.168.2.102   YES NVRAM  up                    up      
+
+Device Neighbors are: 
+R1.pyproject,R3.pyproject,R4.pyproject,R5.pyproject,R6.pyproject,R7.pyproject,R8.pyproject
