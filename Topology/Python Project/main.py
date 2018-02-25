@@ -170,22 +170,24 @@ def FindEndOf(S_Nums):
     for i in range(len(S_Nums)):
 	S_Nums[i] = S_Nums[i].rstrip('\r')
     # response of API
-    for i in range(len(S_Nums)):	
-        response = requests.get('https://api.cisco.com/supporttools/eox/rest/5/EOXBySerialNumber/1/'+S_nums[i]+'?responseencoding=json', headers={'Authorization': 'Bearer '+ token})
-        data = response.text
+    StringNums = ','.join(S_nums)
+	
+    response = requests.get('https://api.cisco.com/supporttools/eox/rest/5/EOXBySerialNumber/1/'+StringNums+'?responseencoding=json', headers={'Authorization': 'Bearer '+ token})
+    data = response.text
 
-        #Regexes to find EOS / EOL of Device
-        EndofSupport = re.findall(r"LastDateOfSupport\":{\"value\":\"(\d+\-\d+\-\d+)",data)[0]
-        EndofLife = re.findall(r"EndOfServiceContractRenewal\":{\"value\":\"(\d+\-\d+\-\d+)",data)[0]
+    #Regexes to find EOS / EOL of Device
+    EndofSupport = re.findall(r"LastDateOfSupport\":{\"value\":\"(\d+\-\d+\-\d+)",data)
+    EndofLife = re.findall(r"EndOfServiceContractRenewal\":{\"value\":\"(\d+\-\d+\-\d+)",data)
+    EOXInputValue = re.findall(r"EOXInputValue\":\"(.*?)\"}",data)
 
-	# Write the results in a .txt file
-        filename = 'Results/Device EOS-EOL.txt'
-        with open(filename,'w') as file1:
-            for i in range(0,len(S_Nums)):
+# Write the results in a .txt file
+    filename = 'Results/Device EOS-EOL.txt'
+    with open(filename,'w') as file1:
+        for i in range(0,len(EndofLife)):
 
-                file1.write("Serial Number : " + S_Nums[i] + '\n')
-                file1.write("Last Date of Support : " + EndofSupport + '\n')
-                file1.write("Last Date of Life : " + EndofLife + '\n\n')
+            file1.write("Serial Number : " + EOXInputValue[i] + '\n')
+            file1.write("Last Date of Support : " + EndofSupport[i] + '\n')
+            file1.write("Last Date of Life : " + EndofLife[i] + '\n\n')
 
 #Initializations
 S_nums = []
